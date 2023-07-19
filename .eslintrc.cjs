@@ -1,5 +1,3 @@
-/* eslint-env node */
-
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
@@ -10,13 +8,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
   ],
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: true,
-    tsconfigRootDir: __dirname,
-  },
   plugins: ['react-refresh'],
+  ignorePatterns: ['eslintrc.cjs'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
