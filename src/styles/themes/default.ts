@@ -18,7 +18,7 @@ export const defaultTheme = {
     'base-card': '#F3F2F2',
 
 
-    'backround': '#FAFAFA',
+    'backround': '#ededed',
     'white': '#ffffff'
   },
   fonts: {

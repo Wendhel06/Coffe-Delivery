@@ -1,5 +1,6 @@
-import { HeaderContainer } from "./styles";
 import logoSite from "../../assets/Logo.png";
+import { MapPinLine, ShoppingCart } from "@phosphor-icons/react";
+import { HeaderContainer } from "./styles";
 
 export function Header() {
   return (
@@ -7,6 +8,15 @@ export function Header() {
       <a href="/">
         <img src={logoSite} alt="logotipo-do-site" />
       </a>
+      <div>
+        <div>
+          <MapPinLine background-color="red" />
+          <p>Orlândia, SP</p>
+        </div>
+        <a>
+          <ShoppingCart size={19} />
+        </a>
+      </div>
     </HeaderContainer>
   );
 }
