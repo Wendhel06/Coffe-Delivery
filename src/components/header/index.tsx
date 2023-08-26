@@ -10,7 +10,7 @@ export function Header() {
       </a>
       <div>
         <div>
-          <MapPinLine background-color="red" />
+          <MapPinLine />
           <p>Orlândia, SP</p>
         </div>
         <a>

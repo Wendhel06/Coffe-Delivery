@@ -16,10 +16,12 @@ export const defaultTheme = {
     'base-button': '#E6E5E5',
     'base-input': '#EDEDED',
     'base-card': '#F3F2F2',
+    'brand-purple': '#8047F8',
+    'brand-yellow': '#DBAC2C',
 
 
     'backround': '#ededed',
-    'white': '#ffffff'
+    'white': '#ffffff',
   },
   fonts: {
     family: {

@@ -51,7 +51,7 @@ export const InfoCoffeeHome = styled.div`
  }
 
  & > div:first-child svg{
-   background-color: ${({theme}) => theme.colors['yellow-dark']}
+   background-color: ${({theme}) => theme.colors['yellow-dark']};
  }
 
  & > div:nth-child(2) svg{
@@ -59,15 +59,16 @@ export const InfoCoffeeHome = styled.div`
 }
 
 & > div:nth-child(3) svg{
-  background-color: ${({theme}) => theme.colors['yellow']}
+  background-color: ${({theme}) => theme.colors['yellow']};
 }
 
 & > div:nth-child(4) svg{
-  background-color: ${({theme}) => theme.colors['purple']}
+  background-color: ${({theme}) => theme.colors['purple']};
 }
 
- & > p {
+ & > div > p {
   font-size: ${({theme}) => theme.sizes['Text M']};
+  width: 100%;
  }
 
  @media (max-width: 991px) {
@@ -78,14 +79,11 @@ export const InfoCoffeeHome = styled.div`
   }
 
   & div:nth-child(4n) {
-    margin-top: 1.25rem
+    margin-top: 1.25rem;
   }
 }
 `
-
 export const ListCoffeeHomepage = styled.section`
- padding: 2rem;
-
  & > h3 {
    font-size: ${({theme}) => theme.sizes['Title L']};
    font-weight: 800;
@@ -96,7 +94,25 @@ export const ListCoffeeHomepage = styled.section`
   width: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(4, 16rem) !important;
+  grid-template-columns: repeat(4, 16rem);
  }
 
+ @media (max-width: 1178px) {
+  & > div {
+    justify-content: center;
+    grid-template-columns: 16rem 16rem 16rem;
+   } 
+}
+
+@media (max-width: 891px) {
+  & > div {
+    grid-template-columns: 16rem 16rem;
+   } 
+}
+
+@media (max-width: 606px) {
+  & > div {
+    grid-template-columns: 16rem;
+   } 
+}
 `

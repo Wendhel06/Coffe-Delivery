@@ -38,7 +38,7 @@ h5 {
   font-size: ${({theme}) => theme.sizes['Title XS']}
 }
 
-p {
+p, span{
   font-weight: 400;
   line-height: 130%;
   color: ${({theme}) => theme.colors['base-text']};
