@@ -1,7 +1,7 @@
-import { CoffeeType } from "../../pages/Home";
 import { ButtonAddOrRemoveCoffee } from "../ButtonAddOrRemoveCoffee";
 import { GridCardsCoffeeHome, TagsCardsCoffeeHome, CoffeeSale } from "./styles";
-import { ShoppingCart } from "@phosphor-icons/react";
+import { CartButton } from "../CartButton";
+import { CoffeeType } from "../../providers/CoffeeProvider";
 
 type CoffeeCardHomeType = {
   coffees: CoffeeType;
@@ -30,9 +30,7 @@ export function CardCoffeesHome({ coffees }: CoffeeCardHomeType) {
         </p>
         <div>
           <ButtonAddOrRemoveCoffee />
-          <button>
-            <ShoppingCart size={20} />
-          </button>
+          <CartButton />
         </div>
       </CoffeeSale>
     </GridCardsCoffeeHome>

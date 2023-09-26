@@ -22,10 +22,4 @@ export const HeaderContainer = styled.header`
     line-height: 130%;
     gap: 4px;
   }
-
-  & div > a{
-    background-color: ${({theme}) => theme.colors['yellow-light']};
-    padding: 0.5rem 0.7rem;
-    border-radius: 6px;
-  }
 `

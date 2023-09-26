@@ -10,15 +10,6 @@ import { Coffee, Cube, ShoppingCart, Timer } from "@phosphor-icons/react";
 import { ListCoffees } from "../../coffee";
 import { CardCoffeesHome } from "../../components/CardHomepage";
 
-export interface CoffeeType {
-  id: string;
-  coffee_name: string;
-  coffee_image: string;
-  type: string[];
-  coffee_description: string;
-  coffee_value: number;
-}
-
 export function Home() {
   return (
     <MainContainerHome>

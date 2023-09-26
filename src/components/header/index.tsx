@@ -1,6 +1,8 @@
 import logoSite from "../../assets/Logo.png";
-import { MapPinLine, ShoppingCart } from "@phosphor-icons/react";
+import { MapPinLine } from "@phosphor-icons/react";
 import { HeaderContainer } from "./styles";
+import { NavLink } from "react-router-dom";
+import { CartButton } from "../CartButton";
 
 export function Header() {
   return (
@@ -13,9 +15,9 @@ export function Header() {
           <MapPinLine />
           <p>Orlândia, SP</p>
         </div>
-        <a>
-          <ShoppingCart size={19} />
-        </a>
+        <NavLink to="/checkout">
+          <CartButton />
+        </NavLink>
       </div>
     </HeaderContainer>
   );
